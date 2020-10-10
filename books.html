@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="navBar">
+
+        <div class="navLeft">
+            <a href="index.html"> <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQxMi43MiA0MTIuNzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQwNC43Miw4Mi45NDRjLTAuMDI3LDAtMC4wNTQsMC0wLjA4LDBoMGgtMjcuMTJ2LTkuMjhjMC4xNDYtMy42NzMtMi4yMy02Ljk3NC01Ljc2LTggICAgYy0xOC44MjgtNC45MzQtMzguMjE2LTcuNDA4LTU3LjY4LTcuMzZjLTMyLDAtNzUuNiw3LjItMTA3Ljg0LDQwYy0zMi0zMy4xMi03NS45Mi00MC0xMDcuODQtNDAgICAgYy0xOS40NjQtMC4wNDgtMzguODUyLDIuNDI2LTU3LjY4LDcuMzZjLTMuNTMsMS4wMjYtNS45MDYsNC4zMjctNS43Niw4djkuMkg4Yy00LjQxOCwwLTgsMy41ODItOCw4djI1NS41MmMwLDQuNDE4LDMuNTgyLDgsOCw4ICAgIGMxLjM3NC0wLjAwNCwyLjcyNC0wLjM2MiwzLjkyLTEuMDRjMC44LTAuNCw4MC44LTQ0LjE2LDE5Mi40OC0xNmgxLjJoMC43MmMwLjYzOCwwLjA3NywxLjI4MiwwLjA3NywxLjkyLDAgICAgYzExMi0yOC40LDE5MiwxNS4yOCwxOTIuNDgsMTZjMi40NzUsMS40MjksNS41MjUsMS40MjksOCwwYzIuNDYtMS40MiwzLjk4My00LjAzOSw0LTYuODhWOTAuOTQ0ICAgIEM0MTIuNzIsODYuNTI2LDQwOS4xMzksODIuOTQ0LDQwNC43Miw4Mi45NDR6IE0xNiwzMzMuNjY0Vjk4Ljk0NGgxOS4xMnYyMDAuNjRjLTAuMDUsNC40MTgsMy40OTEsOC4wNCw3LjkwOSw4LjA5ICAgIGMwLjQzMiwwLjAwNSwwLjg2NC0wLjAyNSwxLjI5MS0wLjA5YzE2LjU1LTIuNTI3LDMzLjI1OS0zLjg2NCw1MC00YzIzLjE5LTAuNDAyLDQ2LjI4MywzLjA4Niw2OC4zMiwxMC4zMiAgICBDMTEyLjg3NSwzMDcuODg2LDYyLjM5NywzMTQuNjg4LDE2LDMzMy42NjR6IE05NC4zMiwyODcuNjY0Yy0xNC41NTEsMC4wMzMtMjkuMDg1LDAuOTY4LTQzLjUyLDIuOFY3OS45ODQgICAgYzE1LjU3Ni0zLjQ3LDMxLjQ4Mi01LjI0MSw0Ny40NC01LjI4YzI5LjkyLDAsNzEuMiw2Ljg4LDk5Ljg0LDM5LjJsMC4yNCwxOTkuMjhDMTgxLjY4LDMwMi4zMDQsMTQ5LjIsMjg3LjY2NCw5NC4zMiwyODcuNjY0eiAgICAgTTIxNC4zMiwxMTMuOTA0YzI4LjY0LTMyLDY5LjkyLTM5LjIsOTkuODQtMzkuMmMxNS45NTcsMC4wNDcsMzEuODYzLDEuODE3LDQ3LjQ0LDUuMjh2MjEwLjQ4ICAgIGMtMTQuMzU0LTEuODQ5LTI4LjgwOC0yLjgxMS00My4yOC0yLjg4Yy01NC41NiwwLTg3LjEyLDE0LjY0LTEwNCwyNS41MlYxMTMuOTA0eiBNMzk2LjY0LDMzMy42NjQgICAgYy00Ni40OTYtMTkuMDI4LTk3LjA5LTI1LjgzMS0xNDYuOTYtMTkuNzZjMjIuMTQxLTcuMjYsNDUuMzQ0LTEwLjc0OSw2OC42NC0xMC4zMmMxNi44NDYsMC4wOTQsMzMuNjYzLDEuNDA0LDUwLjMyLDMuOTIgICAgYzQuMzY4LDAuNjYzLDguNDQ3LTIuMzQxLDkuMTEtNi43MDljMC4wNjUtMC40MjcsMC4wOTUtMC44NTksMC4wOS0xLjI5MVY5OC45NDRoMTkuMTJMMzk2LjY0LDMzMy42NjR6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg=="
+                    alt="" /></a>
+        </div>
+
+        <div class="navRight">
+            <ul>
+                <b>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a class="act" href="books.html">BOOKS</a></li>
+                    <li><a href="video.html">VIDEO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </b>
+            </ul>
+        </div>
+    </div>
+
+    <div class="book_main">
+        <div class="book_head">
+            <h2>Books</h2>
+        </div>
+
+        <div class="book_container">
+
+
+            <div class="book">
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/de/A_Time_To_Kill_%28Grisham_novel%29_cover.jpg"
+                    alt="">
+
+                <div class="book-info">
+
+                    <h3>A time to kill</h3>
+                    <span class="">
+                        <i class="fas fa-heart"></i> &nbsp;1</span>
+                </div>
+                <div class="overview">
+
+                    <h4>Overview</h4>
+                    A Time to Kill is a 1989 legal thriller by John Grisham. It was Grisham's first novel. The novel was
+                    rejected by many publishers before Wynwood Press eventually gave it a modest 5,000-copy printing.
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/80/The_Firm_Grisham.jpg" alt="">
+                <div class="book-info">
+                    <h3>The Firm</h3>
+                    <span class="">
+                        <i class="fas fa-heart"></i> &nbsp;2</span>
+                </div>
+                <div class="overview">
+                    <h4>Overview</h4>
+                    The Firm is a 1991 legal thriller by American writer John Grisham. It was his second book and the
+                    first which gained wide popularity; in 1993, after selling 1.5 million copies, it was made into a
+                    namesake film starring Tom Cruise, Gene Hackman and Jeanne Tripplehorn.
+
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/The_Client_novel.jpg" alt="">
+                <div class="book-info">
+                    <h3>The Client</h3>
+                    <span class="">
+                        <i class="fas fa-heart"></i> &nbsp;3</span>
+                </div>
+                <div class="overview">
+                    <h4>Overview</h4>
+                    The Client (1993) is a legal thriller written by American author John Grisham, set mostly in
+                    Memphis, Tennessee and New Orleans, Louisiana. It is Grisham's fourth novel. <br />
+
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/15/The_Book_Cover_Of_The_Partner.jpg/220px-The_Book_Cover_Of_The_Partner.jpg"
+                    alt="">
+                <div class="book-info">
+                    <h3>The Partner</h3>
+                    <span class="">
+                        <i class="fas fa-star"></i> &nbsp;4</span>
+                </div>
+                <div class="overview">
+                    <h4>Overview</h4>
+                    Patrick Lanigan is a lawyer who stole a large amount of money from his law firm and fled to South
+                    America. When the owners of the money track him down, he returns to his home in Mississippi, and the
+                    book relates how his return affects him and those around him.<br />
+
+                </div>
+            </div>
+
+
+            <div class="book">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Grisham_The_Chamber.gif/220px-Grisham_The_Chamber.gif"
+                    alt="">
+                <div class="book-info">
+                    <h3>The Chamber</h3>
+                    <span class="">
+                        <i class="fas fa-star"></i> &nbsp;5</span>
+                </div>
+                <div class="overview">
+                    <h4>Overview</h4>
+                    In 1967, in Greenville, Mississippi, the office of Jewish lawyer Marvin Kramer is bombed, injuring
+                    Kramer and killing his two young sons. Sam Cayhall, a member of the Ku Klux Klan, is identified,
+                    arrested and tried for their murders, committed in retaliation for Kramer's involvement in the Civil
+                    Rights Movement
+
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/The_Cover_of_The_Rainmaker.jpg" alt="">
+                <div class="book-info">
+                    <h3>The Rainmaker</h3>
+                    <span class="">
+                        <i class="fas fa-star"></i> &nbsp;6</span>
+                </div>
+                <div class="overview">
+                    <h4>Overview</h4>
+                    Rudy Baylor is about to graduate from Memphis State Law School. He secures a position with a Memphis
+                    law firm, who then loses his job when the firm is bought out by the large Memphis law firm Tinley
+                    Britt. As one of the few members of his class without a job lined up, a desperate Rudy is introduced
+                    to J. Lyman "Bruiser" Stone.
+
+                </div>
+            </div>
+
+
+            <div class="book">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/The_book_cover_of_The_Testament.jpg/220px-The_book_cover_of_The_Testament.jpg"
+                    alt="">
+                <div class="book-info">
+                    <h3>The Testament</h3>
+                    <span class="">
+                        <i class="fas fa-heart"></i> &nbsp;7</span>
+                </div>
+                <div class="overview">
+                    <h4>Overview</h4>
+                    Troy Phelan, an eccentric, reclusive, ruthless billionaire businessman, commits suicide. In order to
+                    cut his family out of his will, he makes a fake will a few hours before his suicide, putting his
+                    family into that will. Minutes before his suicide, he shows his lawyer a new will that he would like
+                    carried out.
+
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/The_Appeal_John_Grisham_Novel.JPG/220px-The_Appeal_John_Grisham_Novel.JPG"
+                    alt="">
+                <div class="book-info">
+                    <h3>The Appeal</h3>
+                    <span class="">
+                        <i class="fas fa-heart"></i> &nbsp;8</span>
+                </div>
+                <div class="overview">
+                    <h4>Overview</h4>
+                    Mississippi attorneys Wes and Mary Grace Payton have battled New York City-based Krane Chemical in
+                    an effort to seek justice for Jeannette Baker, whose husband and son died from carcinogenic
+                    pollutants the company knowingly and negligently allowed to seep into their town's water supply.
+
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Bleachers_%28novel%29.jpg/220px-Bleachers_%28novel%29.jpg"
+                    alt="">
+                <div class="book-info">
+                    <h3>Bleachers </h3>
+                    <span class="">
+                        <i class="fas fa-heart"></i> &nbsp;9</span>
+                </div>
+                <div class="overview">
+                    <h4>Overview</h4>
+                    Neely Crenshaw, born in 1969, is a high school All-American quarterback, who has been Messina High
+                    School's 'golden boy,' expected to lead them to the state title.<br />
+
+
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/The_Whistler_book_cover.png/220px-The_Whistler_book_cover.png"
+                    alt="">
+                <div class="book-info">
+                    <h3>The Whistler </h3>
+                    <span class="">
+                        <i class="fas fa-star"></i> &nbsp;10</span>
+                </div>
+                <div class="overview">
+                    <h4>Overview</h4>
+                    The Whistler is a novel written by American author John Grisham. It was released in hardcover, large
+                    print paperback, e-book, compact disc audiobook and downloadable audiobook on October 25, 2016.
+                    It is a legal thriller about Florida Board on Judicial Conduct investigator Lacy Stoltz .
+
+                </div>
+            </div>
+
+
+            <div class="book">
+                <img src="https://upload.wikimedia.org/wikipedia/en/2/2b/Grisham_-_The_Litigators_Coverart.png" alt="">
+                <div class="book-info">
+                    <h3>The Litigators </h3>
+                    <span class="">
+                        <i class="fas fa-gavel"></i> &nbsp;11</span>
+                </div>
+                <div class="overview">
+                    <h4>Overview</h4>
+                    The Litigators is a 2011 legal thriller novel by John Grisham, his 25th fiction novel overall. The
+                    Litigators is about a two-partner Chicago law firm attempting to strike it rich in a class action
+                    lawsuit over a cholesterol reduction drug by a major pharmaceutical drug company.
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/93/The_Tumor_%28book%29_cover.jpg/220px-The_Tumor_%28book%29_cover.jpg"
+                    alt="">
+                <div class="book-info">
+                    <h3>The Tumor </h3>
+                    <span class="">
+                        <i class="fab fa-pagelines"></i> &nbsp;12</span>
+                </div>
+                <div class="overview">
+                    <h4>Overview</h4>
+                    Paul is a 35-year-old man with a family, who is in good health. His brain develops a tumor, which
+                    causes gradual impaired function of his left side, and eventually a complete blackout. He is
+                    diagnosed with glioma, the severity unknown. Paul undergoes the most effective treatment currently
+                    available.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer__inner">
+            <a href="https://yvonjerv.github.io/" target="_blank">
+                <p>&copy;Von-October-2020</p>
+            </a>
+            <a href="https://github.com/Yvonjerv?tab=repositories" target="_blank">
+                <p>Homework</p>
+            </a>
+            <a href="">
+                <p>Web-Technology</p>
+            </a>
+            <a href="https://bookweb10.000webhostapp.com" target="_blank">
+                <p>Book-Website</p>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
